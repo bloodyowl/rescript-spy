@@ -2,10 +2,10 @@
   "name": "rescript-spy",
   "version": "0.1.0",
   "scripts": {
-    "clean": "bsb -clean-world",
-    "build": "bsb -make-world",
-    "watch": "bsb -make-world -w",
-    "test": "retest test/*.bs.js"
+    "build": "rescript",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
+    "test": "retest test/*.mjs"
   },
   "keywords": [
     "BuckleScript"
@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^8.3.2",
-    "rescript-test": "^0.6.3"
+    "rescript": "^9.1.4",
+    "rescript-test": "^2.0.7"
   }
 }
